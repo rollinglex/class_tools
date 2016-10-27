@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>Tools</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id='wrapper'>
+  <header><h1>Timer</h1>
+ 
+    <div>
+  <nav>
+    <span id="navspace"></span>
+    <span id="nav1">
+    <a href="#" class="navbtn">HOME</a>
+    <a href="#" class="navbtn">WRITING TIMER</a>
+    <a href="#" class="navbtn">SORT ORDER</a></span>
+    <span id="navspace"></span>
+  </nav>
+    </div>
+     </header>
+  
+    
+  <div class="swmodal tmModal" id="modal">
+  </div>
+    <div class="swmodal" id="swmodal">
+    00:00:00
+    </div>
+    <button class="swmodal" id="swButtonGoModal">START</button>
+    <button class="swmodal" id="swResetModal">RESET</button>
+    
+    <div class="tmModal" id="tmModalBG">
+  </div>
+    <div class="tmModal" id="tmModal">
+    00:00:00
+    </div>
+    <button class="tmModal" id="tmStartBtnModal">START</button>
+    <button class="tmModal" id="tmResetBtnModal">RESET</button>
+    
+  
+    <div id="stopwatch">
+      <div id="swtop">
+        <button id="swButtonGo">START</button>
+        <button id="swReset">RESET</button>
+          <div id="swdisplay">
+            <span>00:00:00</span> 
+        </div><!!.. ends swdisplay  ..>
+      </div>
+      
+      <div class="modalCheck">
+        <input type="checkbox"  value="none" id="modalCheck"><label for="modalCheck">&nbsp &nbsp FULL SCREEN</label>
+      </div><!!.. ends sw checkbox  ..>
+      
+      </div><!!.. ends stopwatch  ..>
+    
+	
+<!!.. Timer   ..>
+		<div id="timer">
+      <div id="timerTop">
+        <div id="timerTleft">
+          <div id="timerTxt">Timer</div>          
+        </div>  <!..end timerTleft..>
+        
+        
+        <div id="timerTright">
+          <div id="tmDisplay">
+          <span id="tHour">00</span>:<span id="tMinute">00</span>:<span id="tSecond">00</span> 
+          </div>
+          <div class="tmModalCheck"><input type="checkbox"  value="none" id="tmModalCheck"><label for="tmModalCheck">&nbsp &nbsp FULL SCREEN</label></div>
+        </div><!..end timerTright..>
+        
+      </div><!..end timerTop..>
+      <div id="timerBtm">
+        <div id="timerLleft">
+          <div id="numPad">
+            <div id='numTop'>
+            <button id="1" class="numBtn">1</button>
+            <button id="2" class="numBtn">2</button>
+            <button id="3" class="numBtn">3</button>
+            <button id="4" class="numBtn">4</button>
+            <button id="5" class="numBtn">5</button>
+            </div>
+            <div id="numBtm">
+            <button id="6" class="numBtn">6</button>
+            <button id="7" class="numBtn">7</button>
+            <button id="8" class="numBtn">8</button>
+            <button id="9" class="numBtn">9</button>
+            <button id="0" class="numBtn">0</button>
+            </div>
+          </div><!..end numPad..>
+        </div>
+        <div id="timerLright">
+          <button id="timerSbtn">Start</button>
+          <button id="timerRbtn">Reset</button>
+        </div>
+      </div><!..end timerBtm..>
+      <div id="timerPreset">
+        <button id="min5" class='presetBtn'>5 Min</button>
+        <button id="min10" class='presetBtn'>10 Min</button>
+        <button id="min15" class='presetBtn'>15 Min</button>
+        <button id="min20" class='presetBtn'>20 Min</button>
+        <button id="min30" class='presetBtn'>30 Min</button>
+        <button id="min60" class='presetBtn'>60 Min</button>
+      </div><!..end timerPreset..>
+      <audio id="bell" preload="auto">
+  	  <source src="http://myinstants.com/media/sounds/correct.swf.mp3"></source></audio>  
+    </div><!!  end timer  ..>     
+    
+	<footer></footer>
+  </div> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+    
+</body>
+</html>
