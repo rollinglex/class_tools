@@ -359,8 +359,12 @@ input[type='checkbox']{
 /*****************************************
 Whose turn is it anyways page
 *****************************************/
-#turn_body{
+#turn_wrapper{
+  display: flex;
+  flex-direction: column;
   background-color: #80ced6;
+  margin-top: 12em;
+  height: 50em;
 }
 
 
