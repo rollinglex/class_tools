@@ -193,7 +193,7 @@ timerPreset {
 }
 
 #timerTleft{
-  border: 1px red solid;  
+  bborder: 1px red solid;  
   flex:1;
   align-items: center;
   display:flex;
