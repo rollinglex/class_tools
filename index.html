@@ -10,13 +10,12 @@
 <body>
 
   <div id='wrapper'>
-  	<header id="index_header"><h1>Class Tools</h1>
+  	<header id="index_header"><div id="title"><strong>Class Tools</strong></div>
  		<div>
   			<nav>
 			    <span id="navspace"></span>
 			    <span id="nav1">
 			    <a href="#" class="navbtn">HOME</a>
-			    <a href="#" class="navbtn">WRITING TIMER</a>
 			    <a href="#turn_wrapper" class="navbtn">SORT ORDER</a></span>
 			    <span id="navspace"></span>
   			</nav>
@@ -54,15 +53,15 @@
 	    <div id="timerTop">
 	      <div id="timerTleft">
 	        <div id="timerTxt">Timer</div>          
-	      </div>  <!..end timerTleft..>
+	      </div>  <!--..end timerTleft..-->
 	        <div id="timerTright">
 		      <div id="tmDisplay">
 		      <span id="tHour">00</span>:<span id="tMinute">00</span>:<span id="tSecond">00</span> 
 		      </div>
 		      <div class="tmModalCheck"><input type="checkbox"  value="none" id="tmModalCheck"><label for="tmModalCheck">&nbsp &nbsp FULL SCREEN</label>
 		      </div>
-		    </div><!..end timerTright..>        
-	    </div><!..end timerTop..>
+		    </div><!--..end timerTright..-->        
+	    </div><!--..end timerTop..-->
 	    <div id="timerBtm">
 	      <div id="timerLleft">
 	        <div id="numPad">
@@ -80,13 +79,13 @@
 	            <button id="9" class="numBtn">9</button>
 	            <button id="0" class="numBtn">0</button>
 	          </div>
-	        </div><!..end numPad..>
+	        </div><!--..end numPad..-->
 	      </div>
 	      <div id="timerLright">
 	        <button id="timerSbtn">Start</button>
 	        <button id="timerRbtn">Reset</button>
 	      </div>
-	    </div><!..end timerBtm..>
+	    </div><!--..end timerBtm..-->
 	    <div id="timerPreset">
 	      <button id="min5" class='presetBtn'>5 Min</button>
 	      <button id="min10" class='presetBtn'>10 Min</button>
@@ -94,19 +93,15 @@
 	      <button id="min20" class='presetBtn'>20 Min</button>
 	      <button id="min30" class='presetBtn'>30 Min</button>
 	      <button id="min60" class='presetBtn'>60 Min</button>
-	    </div><!..end timerPreset..>
+	    </div><!--..end timerPreset..-->
     </div><!-- end timer  -->
 	      <audio id="bell" preload="auto">
-	  	  <source src="http://myinstants.com/media/sounds/correct.swf.mp3"></source></audio>  
-       
-
-
-
+	  	  <source src="http://myinstants.com/media/sounds/correct.swf.mp3"></source></audio>       
 
   	<!--.. TURN.....................-->
     <div id = "turn_wrapper">
   	  <div id="turn_header">
-        <span id="title">Whose turn is it anyway?</span>
+        <span id="turn_title">Whose turn is it anyway?</span>
       </div>
       <div id= "top">
       	<input id = "textbox" type = "text" value="Total number of students">

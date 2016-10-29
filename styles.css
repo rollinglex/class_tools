@@ -41,6 +41,13 @@ header
   background-color: deepskyblue;
   display: flex;
   flex-direction: column;
+  position:fixed;
+  width: 100%;
+  z-index: 1;
+}
+#title{
+  font-size: 2.5em;
+  margin: 0.1em auto;
 }
 nav{
   display:flex;
@@ -60,9 +67,7 @@ nav{
 #nav2 {
   bborder: 1px red solid;
   display: flex;
-  justify-content: space-around;
-  
-    
+  justify-content: space-around;    
   flex-grow:3;
 }
 
@@ -71,6 +76,7 @@ nav{
   text-decoration: none;
   align-self: center;
   font-family: helvetica;
+  font-size: 1em;
   
 }
 
@@ -80,8 +86,8 @@ Stopwatch
 *****************************************/
 
 #stopwatch {  
-  margin-top: 5em;
-  height:6em;  
+  margin-top: 12em;
+  height:5.5em;  
   align-self: center;  
   width: 500px;  
   display: flex;
@@ -362,7 +368,7 @@ Whose turn is it anyways page
 #turn_wrapper{
   display: flex;
   flex-direction: column;
-  background-color: #80ced6;
+  background-color: #68d9ff;
   margin-top: 12em;
   height: 50em;
 }
@@ -370,7 +376,7 @@ Whose turn is it anyways page
 
 #turn_header{
   text-align: center;
-  margin: 50px;
+  margin: 2em auto 0.4em;
   font-size: 80px;
 }
 #top{
