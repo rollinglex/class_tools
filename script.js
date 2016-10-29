@@ -42,23 +42,22 @@ function increment(){
     } 
 }; 
 
-
-$( "#swButtonGo" ).click(function(){
-  if ($("#modalCheck").prop("checked")){
-    startTime();
-  $(".swmodal").css("display", "block");
-  
-  } else{
-    startTime();
-  }
-});
+$( "#swButtonGo" ).click(startTime);
 $("#swReset").click(reset);
 
 
+
+
 //Stopwatch Modal
+function modalOn(){
+  $(".swmodal").css("display", "block");
+};
 function modalOff(){
   $(".swmodal").css("display", "none");
 };
+
+$("#fullBtnS").click(modalOn);  //open fullscreen
+
 var modal = document.getElementById('#modal');
 
 $("#modal").click(function() {      
@@ -228,19 +227,21 @@ $("#min60").click(function(){
 //Stopwatch Modal
 function tmModalOff(){
   $(".tmModal").css("display", "none");
-  console.log("one");
 };
 
-$("#tmModalBG").click(function() {      
-          tmModalOff();      
-  });
+function tmModalOn(){
+  $(".tmModal").css("display", "block");
+};
+
+$("#tmModalBG").click(tmModalOff); //closes Timer Modal
+
+$("#fullBtnT").click(tmModalOn); // opens timer Modal
 
 $("#tmStartBtnModal").click(function(){
   
   if($("#tmModalCheck").prop("checked")){
     timerStart();
     $(".tmModal").css("display", "block");
-    console.log("here");
   }else{
     timerStart();
   }

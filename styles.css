@@ -104,7 +104,7 @@ Stopwatch
 
 #swButtonGo {
   bborder: 1px red solid;
-  color: #00b300;
+  color: #28B78D;
   font-family: "Lucida Console", Times, serif;
   font-size: 2em;
   background: rgba(240,240,240,0);
@@ -126,7 +126,7 @@ button:focus {
 
 #swReset {
   bborder: 1px red solid;
-  color: red;
+  color: #fa055b;
   font-family: "Lucida Console", Times, serif;
   font-size: 2em;
   background: rgba(240,240,240,0);
@@ -136,7 +136,7 @@ button:focus {
 
 div #swdisplay,
 #timerTright {
-  order: 1px #666666 solid;
+  bborder: 1px #666666 solid;
   line-height: 60px;
   font-size: 40px;
   font-family: "Courier New", Courier, monospace;
@@ -193,7 +193,7 @@ timerPreset {
 }
 
 #timerTleft{
-  bborder: 1px red solid;  
+  border: 1px red solid;  
   flex:1;
   align-items: center;
   display:flex;
@@ -203,10 +203,11 @@ timerPreset {
 
 #timerTxt{
   bborder: 1px green solid;
-  font-size: 3.4em;
+  font-size: 3.0em;
   width: 50%;
   text-align: center;
-  color: #333333;
+  color: #001133;
+  font-family:  "Lucida Sans Unicode", Times, sans-serif;
 }
 
 
@@ -353,13 +354,30 @@ swModal
 .modalCheck{
   bborder: 1px solid red;
   display: flex;
-  align-self: flex-end;
+  align-self: stretch;
   padding-right: 1em;
   padding-bottom: 0.5em;  
   font-family: Arial;
 }
 
-input[type='checkbox']{  
+#fullBtnS{
+  margin-left: 62%;
+  width: 45%;
+  height: 100%; 
+  border: 1px solid #404347;
+  background-color: #AECFF8;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #5e5e5e;
+}
+#fullBtnT{
+  width: 90%;
+  height: 65%; 
+  border: 1px solid #404347;
+  background-color: #AECFF8;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #5e5e5e;
 }
 
 /*****************************************
