@@ -192,7 +192,7 @@ timerPreset {
   display: flex;
 }
 
-#timerTleft{
+#timerTleft{   
   bborder: 1px red solid;  
   flex:1;
   align-items: center;
@@ -388,7 +388,7 @@ Whose turn is it anyways page
   flex-direction: column;
   background-color: #68d9ff;
   margin-top: 12em;
-  height: 50em;
+  height: 80em;
 }
 
 
@@ -396,10 +396,51 @@ Whose turn is it anyways page
   text-align: center;
   margin: 2em auto 0.4em;
   font-size: 80px;
+  display: flex;
+  flex-direction: column;
 }
+#hint{
+  font-size: 20px;
+  font-family: Verdana, Arial;
+  margin-top: 15px;
+  margin-right: 20px;
+  background-color: #1E3F68;
+  color: white;
+  border-radius: 5px;
+  padding: 1.5px 4px;
+  align-self: flex-end;
+
+}
+
+
+#hintTxt{
+  display: none;
+  border-radius: 5px;
+  height: 100px;
+  width: 280px;
+  align-self: flex-end;
+  margin-top: 0px;
+  margin-right: 20px;
+  font-size: 18px;
+  padding: 15px 15px;
+  color: gray;
+}
+
+#hint:hover #hintTxt {
+  display: block;
+  z-index:9;
+}
+#hint:hover {
+  background-color: white;
+  z-index:0;
+}
+
+
 #top{
   width: 50%;
-  margin: 5px auto;
+  margin: 0px auto;
+  bborder:1px solid red;
+  width: 100%;
   
 }
 
@@ -412,7 +453,7 @@ Whose turn is it anyways page
 
 #textbox[value]{
   color: gray;
-  font-size: 20px
+  font-size: 20px;
 }
 
 .button {
