@@ -178,46 +178,46 @@ $("#timerRbtn").click(timerReset);
 $("#tmResetBtnModal").click(timerReset);
 
 //Shortcut buttons
-$("#min5").click(function(){
-  tt = [0,0,0,5,0,0];
+function btnReset(){ //shortcut button resets timer display
   tdisplay= tt[0] + "" + tt[1] + ":" + tt[2] + tt[3] + ":" + tt[4] + tt[5];
   document.getElementById("tmDisplay").innerHTML = tdisplay; 
   document.getElementById("tmModal").innerHTML = tdisplay;
+};
+
+$("#min5").click(function(){
+  timerReset();
+  tt = [0,0,0,5,0,0];
+  btnReset();
 })
 
 $("#min10").click(function(){
+  timerReset();
   tt = [0,0,1,0,0,0];
-  tdisplay= tt[0] + "" + tt[1] + ":" + tt[2] + tt[3] + ":" + tt[4] + tt[5];
-  document.getElementById("tmDisplay").innerHTML = tdisplay; 
-  document.getElementById("tmModal").innerHTML = tdisplay;
+  btnReset();
 })
 
 $("#min15").click(function(){
+  timerReset();
   tt = [0,0,1,5,0,0];
-  tdisplay= tt[0] + "" + tt[1] + ":" + tt[2] + tt[3] + ":" + tt[4] + tt[5];
-  document.getElementById("tmDisplay").innerHTML = tdisplay; 
-  document.getElementById("tmModal").innerHTML = tdisplay;
+  btnReset();;
 })
 
 $("#min20").click(function(){
+  timerReset();
   tt = [0,0,2,0,0,0];
-  tdisplay= tt[0] + "" + tt[1] + ":" + tt[2] + tt[3] + ":" + tt[4] + tt[5];
-  document.getElementById("tmDisplay").innerHTML = tdisplay; 
-  document.getElementById("tmModal").innerHTML = tdisplay;
+  btnReset();
 })
 
 $("#min30").click(function(){
+  timerReset();
   tt = [0,0,3,0,0,0];
-  tdisplay= tt[0] + "" + tt[1] + ":" + tt[2] + tt[3] + ":" + tt[4] + tt[5];
-  document.getElementById("tmDisplay").innerHTML = tdisplay; 
-  document.getElementById("tmModal").innerHTML = tdisplay;
+  btnReset();
 })
 
 $("#min60").click(function(){
+  timerReset();
   tt = [0,1,0,0,0,0];
-  tdisplay= tt[0] + "" + tt[1] + ":" + tt[2] + tt[3] + ":" + tt[4] + tt[5];
-  document.getElementById("tmDisplay").innerHTML = tdisplay; 
-  document.getElementById("tmModal").innerHTML = tdisplay;
+  btnReset();
 })
 
 //End Timer
