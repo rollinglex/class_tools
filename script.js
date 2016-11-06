@@ -16,7 +16,8 @@ function reset(){
   time = 0; running = 0;
   document.getElementById(swButtonGo.innerHTML = "START");
   document.getElementById(swButtonGoModal.innerHTML = "START");
-  document.getElementById("swdisplay").innerHTML = '<span>00:00:00</span>'; 
+  document.getElementById("swdisplay").innerHTML = '<span>00:00:00</span>';
+  document.getElementById("swmodal").innerHTML =  '<span>00:00:00</span>';
 };
 function increment(){
   
@@ -64,10 +65,9 @@ $("#modal").click(function() {
           modalOff();      
   });
 
-$( "#swButtonGoModal" ).click(function(){
-    startTime()
-});
+$( "#swButtonGoModal" ).click(startTime);
 $("#swResetModal").click(reset);
+
 //END Stop Watch/////////////////////////////////////
 
 
