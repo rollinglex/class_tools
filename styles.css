@@ -489,4 +489,30 @@ Whose turn is it anyways page
   text-align: center;
 }
 
+/*****************************************
+Media Queries
+*****************************************/
+@media (max-width: 900px) {
+  #swmodal, #tmModal{ /*Modal displays*/
+    margin: 0.8em auto;
+    font-size: 8em;
+  } 
+  #swButtonGoModal, #swResetModal, #tmResetBtnModal, #tmStartBtnModal { /* modal buttons*/
+    font-size: 1.2em;
+    top: 15em;
+    height: 12%;
+    width: 14%;
+  }
+}
 
+@media (max-width: 650px) { 
+  #swmodal, #tmModal{ /*Modal displays*/
+    margin: 1.5em auto;
+    font-size: 5em;
+  } 
+  #swButtonGoModal, #swResetModal, #tmResetBtnModal, #tmStartBtnModal { /* modal buttons*/
+    font-size: 0.9em;
+    top: 18em;
+    height: 6%;
+    width: 18%;
+  }
