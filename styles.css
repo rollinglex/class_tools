@@ -168,6 +168,12 @@ Timer
   box-shadow: 4px 4px 3px #888888;
 }
 
+@-moz-document url-prefix() {
+                        #timer {
+                          height:18em;
+                          }     
+                    }
+
 #timerTop,
 #timerBtm,
 timerPreset {
@@ -177,6 +183,14 @@ timerPreset {
   overflow: none;  
   display: flex;
 }
+@-moz-document url-prefix() {
+                        #timerTop,
+                        #timerBtm,
+                        timerPreset {
+                          margin-top: 0em;
+                          }                              
+                    }
+
 #timerBtm{
   margin-bottom:1em;;
 }
@@ -271,7 +285,12 @@ timerPreset {
   border-radius: 12px;
   font-size: 1.3em;
 }
-
+@-moz-document url-prefix() {
+                     #timerSbtn,
+                      #timerRbtn {
+                        height: 70%;
+                      }       
+                    }
 #timerPreset {
   margin: 0.5em;
   display: flex;
